@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Figtree Italic;
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+body {
+  background: #f4d04e;
+  font-family: Figtree;
+}
+
+.main {
+  border-radius: 20px;
+  border: 1px solid #111;
+  background: #fff;
+  box-shadow: 8px 8px 0px 0px #000;
+  margin: 155px 24px;
+  padding: 24px;
+}
+
+.illustration {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.illustration img {
+  border-radius: 10px;
+  background: #f4d04e;
+  width: 100%;
+  overflow: hidden;
+}
+
+.label {
+  width: fit-content;
+  border-radius: 4px;
+  background: #f4d04e;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.date {
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.title {
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.description {
+  padding-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #7f7f7f;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.author img {
+  height: 32px;
+  width: 32px;
+  padding-right: 12px;
+}
+
+.author p {
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.attribution {
+  position: static;
+  bottom: 20px;
+  right: 42%;
+  left: 43%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 992px) {
+  .main {
+    width: 384px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .title:hover {
+    color: #F4D04E;
+    cursor: url("assets/images/handcursor.svg"), auto;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 20px;
+    right: 42%;
+    left: 43%;
+    font-size: 11px;
+    text-align: center;
+  }
+}
